@@ -1,0 +1,25 @@
+{% set version = environ.get('GIT_DESCRIBE_TAG', '0.0.0') %}
+{% set number = environ.get('GIT_DESCRIBE_NUMBER', 0) %}
+
+{% set components = version.split('.') %}
+{% set major = components[0] | int %}
+{% set minor = components[1] | int %}
+
+package:
+  name: roq-jupyter
+  version: {{ version }}
+
+source:
+  path: ..
+
+build:
+  skip: True  # [win and osx]
+  number: {{ number }}
+
+about:
+  home: https://roq-trading.com
+  dev_url: https://github.com/roq-trading
+  license: BSD-3-Clause
+  license_family: BSD
+  license_file: LICENSE
+  summary: Roq Jupyter
