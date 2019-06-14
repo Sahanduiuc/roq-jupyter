@@ -8,6 +8,10 @@ algorithmic trading strategies.
 
 The Python interface is easily accessible through Jupyter Notebook.
 
+> GitHub isn't currently great at rendering the notebooks.
+> You might want to visit e.g. the Jupyter nbviewer website instead,
+> e.g. [simple.ipynb](https://nbviewer.jupyter.org/github/roq-trading/roq-jupyter/blob/master/notebooks/simple.ipynb)
+
 There are many ways to install Jupyter Notebook.
 Here we describe
 
